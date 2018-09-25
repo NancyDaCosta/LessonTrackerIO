@@ -2,6 +2,7 @@ var login = require('../test-assets/login')
 var addClient = require('../test-assets/addClient')
 var addBillingInfo = require('../test-assets/addBillingInfo')
 var addTimetable = require('../test-assets/addTimetable')
+var addLessons = require('../test-assets/addLessons')
 var testData = require('../test-assets/testData')
 var lessonTracker = ''
 
@@ -38,6 +39,12 @@ module.exports = {
   //   //Running Automated Test for LT-6
   //   testData.timeTables.forEach(test => {
   //     addTimetable(lessonTracker, test)
+  //   })
+  // },
+  // 'Add Lesson': browser => {
+  //   //Running Automated Test for LT-7
+  //   testData.lessons.forEach(test => {
+  //     addLessons(lessonTracker, test)
   //   })
   // },
   after: browser => {

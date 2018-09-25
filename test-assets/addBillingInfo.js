@@ -25,5 +25,7 @@ module.exports = (page, addBillingInfo, clientName) => {
     .setValue('@billToState', addBillingInfo.billToState)
     .setValue('@billToCountry', addBillingInfo.billToCountry)
     .setValue('@billToZip', addBillingInfo.billToZip)
+    .api.pause(10000)
+  page
     .click('@done')
 }

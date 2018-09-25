@@ -70,5 +70,14 @@ module.exports = {
       selector: '//button[text()="Save"]',
       locateStrategy: 'xpath'
     },
+    lessonsMenu: {
+      selector: '(//a[@ui-sref="lessons"])[1]',
+      locateStrategy: 'xpath'
+    }, 
+    newLessonEntry: 'button[ui-sref="lesson_new"]',
+    lessonDate: {
+      selector: '//span[text()="Select a lesson date"]',
+      locateStrategy: 'xpath'
+    },
   }
 }

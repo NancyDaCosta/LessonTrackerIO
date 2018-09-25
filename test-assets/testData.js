@@ -20,16 +20,16 @@ module.exports = {
       // clientContactNumber1: '22222222',
       // clientContactNumber2: '3333333331',
       clientName: 'Jenny Sugars',
-      billToName: 'Moneybuddy',
-      billToEmail: 'Moneybuddyemail',
-      billToContactNumber: '2222222222',
-      billToBillingAddress1: '341',
-      billToBillingAddress2: 'Highland',
-      billToBillingAddress3: 'Drive',
-      billToCity: 'Sandy',
-      billToState: 'UT',
+      billToName: 'Hello',
+      billToEmail: 'Hello',
+      billToContactNumber: '5555555555',
+      billToBillingAddress1: '333',
+      billToBillingAddress2: 'Makeup',
+      billToBillingAddress3: 'Lake',
+      billToCity: 'Sally',
+      billToState: 'CA',
       billToCountry: 'USA',
-      billToZip: '84070',
+      billToZip: '84000',
     }
   ],
   timeTables: [
@@ -39,6 +39,15 @@ module.exports = {
       startMinute: '00',
       finishHour: '14',
       finishMinute: '00',
+    }
+  ],
+  lessons: [
+    {
+      // dayOfTheMonth: ,
+      startHour: '13',
+      startMinute: '01',
+      finishHour: '15',
+      finishMinute: '01',
     }
   ]
 }

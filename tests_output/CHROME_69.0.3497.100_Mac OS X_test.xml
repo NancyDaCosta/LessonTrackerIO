@@ -5,19 +5,19 @@
 
   <testsuite name="test"
     errors="0" failures="0" hostname="" id="" package="test" skipped="0"
-    tests="3" time="22.58" timestamp="Tue, 25 Sep 2018 22:24:21 GMT">
+    tests="3" time="34.07" timestamp="Tue, 25 Sep 2018 23:24:05 GMT">
   
-    <testcase name="Does this load?" classname="test" time="3.745" assertions="1">
+    <testcase name="Does this load?" classname="test" time="4.628" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Signing into account" classname="test" time="11.31" assertions="1">
+    <testcase name="Signing into account" classname="test" time="11.95" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Add Billing Info" classname="test" time="7.524" assertions="1">
+    <testcase name="Add Billing Info" classname="test" time="17.49" assertions="1">
 
     
     </testcase>
