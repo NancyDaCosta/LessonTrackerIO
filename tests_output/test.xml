@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="2">
+
+  <testsuite name="test"
+    errors="1" failures="0" hostname="" id="" package="test" skipped="1"
+    tests="2" time="0.009000" timestamp="Mon, 24 Sep 2018 18:19:22 GMT">
+  
+    <testcase name="Does this load?" classname="test" time="0.009000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Test / Does this load?]:
+
+  Error: welcome was not found in &#34;lessonTracker&#34;. Available elements: load,loginButton,loginEmail,loginPassword,login,footer,burger,addFirstStudent,addStudent,firstName,lastName,email,phone,day,dayNone,dayMonday,dayTuesday,dayWednesday,dayThursday,dayFriday,daySaturday,daySunday,time,hour12,hour1,hour2,hour3,hour4,hour5,hour6,hour7,hour8,hour9,hour10,hour11,minute00,minute01,minute02,minute03,minute04,minute05,minute06,minute07,minute08,minute09,minute10,minute11,minute12,minute13,minute14,minute15,minute16,minute17,minute18,minute19,minute20,minute21,minute22,minute23,minute24,minute25,minute26,minute27,minute28,minute29,minute30,minute31,minute32,minute33,minute34,minute35,minute36,minute37,minute38,minute39,minute40,minute41,minute42,minute43,minute44,minute45,minute46,minute47,minute48,minute49,minute50,minute51,minute52,minute53,minute54,minute55,minute56,minute57,minute58,minute59,am,pm,cancel,submit,studentName
+    at getElement (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:13:13)
+    at Object.element (/usr/local/lib/node_modules/nightwatch/lib/page-object/command-wrapper.js:81:32)
+    at Object.Does this load? (/Users/nancydacosta/DevMtn/LessonTrackerio/tests/test.js:18:15)
+    at Module.call (/usr/local/lib/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /usr/local/lib/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/usr/local/lib/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Signing into account" classname="test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
