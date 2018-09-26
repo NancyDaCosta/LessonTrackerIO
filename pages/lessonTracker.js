@@ -79,5 +79,9 @@ module.exports = {
       selector: '//span[text()="Select a lesson date"]',
       locateStrategy: 'xpath'
     },
+    today: {
+      selector: '(//button[@class="pure-button pure-button-highlight small"])[1]',
+      locateStrategy: 'xpath'
+    }
   }
 }

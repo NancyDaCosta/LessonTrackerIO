@@ -22,31 +22,26 @@ module.exports = {
       login(lessonTracker, test)
     })
   },
-  // 'Add Client': browser => {
-  //   //Running Automated Test for LT-5
+  // 'Add Client and Billing Info': browser => {
   //   testData.validClients.forEach(test => {
+  //   //Running Automated Test for LT-5
   //     addClient(lessonTracker, test)
+  //   //Running Automated Test for LT-9
+  //     addBillingInfo(lessonTracker, test)
   //   })
   // },
-  'Add Billing Info': browser => {
-    //Running Automated Test for LT-9
-    testData.validClients.forEach(test => {
-      console.log(test)
-      addBillingInfo(lessonTracker, test)
-    })   
+  'Add Timetable Entry': browser => {
+    //Running Automated Test for LT-6
+    testData.timeTables.forEach(test => {
+      addTimetable(lessonTracker, test)
+    })
   },
-  // 'Add Timetable Entry': browser => {
-  //   //Running Automated Test for LT-6
-  //   testData.timeTables.forEach(test => {
-  //     addTimetable(lessonTracker, test)
-  //   })
-  // },
-  // 'Add Lesson': browser => {
-  //   //Running Automated Test for LT-7
-  //   testData.lessons.forEach(test => {
-  //     addLessons(lessonTracker, test)
-  //   })
-  // },
+  'Add Lesson': browser => {
+    //Running Automated Test for LT-7
+    testData.lessons.forEach(date => {
+      addLessons(lessonTracker, date)
+    })
+  },
   after: browser => {
     browser.end()
   }

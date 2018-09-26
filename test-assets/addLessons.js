@@ -1,4 +1,4 @@
-module.exports = (page, addLessons) => {
+module.exports = (page, date) => {
   page
     .click('@lessonsMenu')
     .api.pause(2000)
@@ -6,26 +6,23 @@ module.exports = (page, addLessons) => {
     .click('@newLessonEntry')
     .api.pause(2000)
   page
+    .waitForElementVisible('@lessonDate', 5000)
     .click('@lessonDate')
-    
-    // .api.useXpath()
-    //NEED HELP WITH DATE PICKER!!!
-    // .click(`//a[text()="${addTimetable.dayOfTheWeek}"]`)
-    // .waitForElementNotVisible(`//a[text()="${addTimetable.dayOfTheWeek}"]`, 2000)
-    // .useCss()
-  // page
+    .click('@today')
     .click('@startTime')
     .api.useXpath()
-    .waitForElementVisible(`(//a[@ng-click="setHour('${addLessons.startHour}')"])[1]`, 2000)
-    .click(`(//a[@ng-click="setHour('${addLessons.startHour}')"])[1]`)
-    .click(`(//a[@ng-click="setMinute('${addLessons.startMinute}')"])[1]`)
+    .waitForElementVisible(`(//a[@ng-click="setHour('${date.startHour}')"])[1]`, 2000)
+    .click(`(//a[@ng-click="setHour('${date.startHour}')"])[1]`)
+    .click(`(//a[@ng-click="setMinute('${date.startMinute}')"])[1]`)
     .useCss()
   page
     .click('@setTime')
+    .api.pause(2000)
+  page
     .click('@duration')
     .api.useXpath()
-    .click(`(//a[@ng-click="setHour('${addLessons.finishHour}')"])[2]`)
-    .click(`(//a[@ng-click="setMinute('${addLessons.finishMinute}')"])[2]`)
+    .click(`(//a[@ng-click="setHour('${date.finishHour}')"])[2]`)
+    .click(`(//a[@ng-click="setMinute('${date.finishMinute}')"])[2]`)
     .useCss()
   page
     .click('@setDuration')
