@@ -17,27 +17,27 @@ module.exports = {
       .waitForElementVisible('@load', 1000)
   },
   'Signing into account': browser => {
-    //Running Automated Test for LT-2
+    //https://dmutah.atlassian.net/browse/LT-2
     testData.validLogin.forEach(test => {
       login(lessonTracker, test)
     })
   },
-  // 'Add Client and Billing Info': browser => {
-  //   testData.validClients.forEach(test => {
-  //   //Running Automated Test for LT-5
-  //     addClient(lessonTracker, test)
-  //   //Running Automated Test for LT-9
-  //     addBillingInfo(lessonTracker, test)
-  //   })
-  // },
+  'Add Client and Billing Info': browser => {
+    testData.validClients.forEach(test => {
+    //https://dmutah.atlassian.net/browse/LT-5
+      addClient(lessonTracker, test)
+    //https://dmutah.atlassian.net/browse/LT-9
+      addBillingInfo(lessonTracker, test)
+    })
+  },
   'Add Timetable Entry': browser => {
-    //Running Automated Test for LT-6
+    //https://dmutah.atlassian.net/browse/LT-6
     testData.timeTables.forEach(test => {
       addTimetable(lessonTracker, test)
     })
   },
   'Add Lesson': browser => {
-    //Running Automated Test for LT-7
+    //https://dmutah.atlassian.net/browse/LT-7
     testData.lessons.forEach(date => {
       addLessons(lessonTracker, date)
     })
