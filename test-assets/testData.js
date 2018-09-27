@@ -67,6 +67,13 @@ module.exports = {
       startMinute: '00',
       finishHour: '14',
       finishMinute: '00',
+    },
+    {
+      dayOfTheWeek: 'Saturday',
+      startHour: '17',
+      startMinute: '10',
+      finishHour: '19',
+      finishMinute: '10',
     }
   ],
   lessons: [
@@ -81,6 +88,12 @@ module.exports = {
       startMinute: '05',
       finishHour: '16',
       finishMinute: '05',
+    },
+    {
+      startHour: '16',
+      startMinute: '30',
+      finishHour: '19',
+      finishMinute: '35',
     }
   ]
 }
